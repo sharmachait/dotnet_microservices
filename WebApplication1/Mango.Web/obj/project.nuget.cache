@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OLfgk31mwuLhu2FNwyQ9NXuXjvereqc3Xe7CqE5r95TQ29BlgwXdkMZngicyBvacpB+ujhcsSipLChqWIVs9Ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\Mango.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chaitanya sharma\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
