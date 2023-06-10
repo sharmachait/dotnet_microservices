@@ -5,10 +5,10 @@
 }
 
 <div class="card shadow border-0 mt-4">
-	<div class="card-header bg-secondary bg-gradient ml-0 py-1">
+	<div class="card-header ml-0 py-1">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h2 class="text-white">Coupons List</h2>
+				<h2 class="text-dark">Coupons List</h2>
 			</div>
 		</div>
 	</div>
@@ -17,7 +17,7 @@
 			<div class="col-6">
 			</div>
 			<div class="col-6 text-end">
-				<a class="btn btn-outline-primary"><i class="bi bi-plus-square"></i> Create New Coupon</a>
+				<a asp-action="CouponCreate" class="btn btn-outline-primary"><i class="bi bi-plus-square"></i> Create New Coupon</a>
 
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 					<td> @((item.MinAmount).ToString("c"))
 					</td>
 					<td>
-						<a class="btn btn-danger">
+						<a asp-action="CouponDelete" asp-route-couponId="@item.CouponId" class="btn btn-danger">
 							<i class="bi bi-trash"></i>
 						</a>
 					</td>

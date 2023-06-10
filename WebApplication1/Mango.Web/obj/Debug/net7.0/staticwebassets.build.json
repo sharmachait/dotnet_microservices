@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "olOrI9rMAiat6ETh/tMslm9RK4h/sOYJ2pMRgVhHG0o=",
+  "Hash": "USHucCNuqcgN1VhOftt5AiodylfrbLbePFJ17PesJJc=",
   "Source": "Mango.Web",
   "BasePath": "_content/Mango.Web",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\cup-hot-fill.ico",
+      "SourceId": "Mango.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\",
+      "BasePath": "_content/Mango.Web",
+      "RelativePath": "cup-hot-fill.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cup-hot-fill.ico"
     },
     {
       "Identity": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\favicon.ico",
@@ -1069,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\programmer.ico",
+      "SourceId": "Mango.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\",
+      "BasePath": "_content/Mango.Web",
+      "RelativePath": "programmer.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\programmer.ico"
     }
   ]
 }

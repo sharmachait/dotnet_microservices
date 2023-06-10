@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\cup-hot-fill.ico",
+      "PackagePath": "staticwebassets\\cup-hot-fill.ico"
+    },
+    {
       "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -243,6 +247,10 @@
     {
       "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\programmer.ico",
+      "PackagePath": "staticwebassets\\programmer.ico"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Mango.Web.Microsoft.AspNetCore.StaticWebAssets.props",
