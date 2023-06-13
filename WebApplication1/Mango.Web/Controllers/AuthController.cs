@@ -75,6 +75,11 @@ namespace Mango.Web.Controllers
 
             identity.AddClaim(new Claim(ClaimTypes.Name,
                 jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
+            
+            identity.AddClaim(new Claim(ClaimTypes.Role,
+                jwt.Claims.FirstOrDefault(u => u.Type.Equals("role")).Value));
+
+            TempData["ROLE"] = jwt.Claims.FirstOrDefault(u => u.Type.Equals("role")).Value;
 
 
 
@@ -134,9 +139,12 @@ namespace Mango.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            return View();
+            await HttpContext.SignOutAsync();
+            _tokenProvider.ClearToken();
+            
+            return RedirectToAction("Index","Home");
         }
     }
 }

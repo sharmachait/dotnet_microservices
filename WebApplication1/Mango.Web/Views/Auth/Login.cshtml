@@ -11,17 +11,16 @@
                 Login
             </h1>
         </div>
-        <div class="row text-center">
-            <div asp-validation-summary="All" class="text-danger"></div>
-        </div>
         <div class="row mt-5">
             <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns: 0.7fr 1.3fr;">
                 <label class="control-label pt-2" style="font-size:20px;">Username</label>
                 <input type="text" asp-for="UserName" class="form-control" placeholder="Username">
+                <span asp-validation-for="UserName" class="text-danger" />
             </div>
             <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns: 0.7fr 1.3fr;">
                 <label class="control-label pt-2" style="font-size:20px;">Password</label>
                 <input type="password" asp-for="Password" class="form-control" placeholder="Password">
+                <span asp-validation-for="Password" class="text-danger" />
             </div>
             <div class="col-12 col-md-6 offset-md-3 mt-2 pb-2" style="display:grid;grid-template-columns: 1fr 1fr;grid-column-gap: 10px;">
                 <a type="submit" class="form-control btn btn-secondary" asp-action="Register" value="Submit">Sign Up</a>
