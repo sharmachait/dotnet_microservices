@@ -1,0 +1,57 @@
+﻿@model RegistrationRequestDTO
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<form method="post">
+    <div class="container border p-4 mt-5">
+        <div class="row text-center mt-5">
+            <h1>
+                Sign Up
+            </h1>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns: 0.7fr 1.3fr;">
+                <label class="control-label pt-2" style="font-size:20px;">Name</label>
+                <input type="text" asp-for="Name" class="form-control" placeholder="Name"/>
+                <span asp-validation-for="Name" class="text-danger"/>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns:0.7fr 1.3fr;">
+                <label class="control-label pt-2" style="font-size:20px;">Email</label>
+                <input type="text" asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger" />
+
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns: 0.7fr 1.3fr;">
+                <label class="control-label pt-2" style="font-size:20px;" >Phone No.</label>
+                <input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="Phone number"/>
+                <span asp-validation-for="PhoneNumber" class="text-danger" />
+
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns: 0.7fr 1.3fr;">
+                <label class="control-label pt-2" style="font-size:20px;">Password</label>
+                <input type="password" asp-for="Password" class="form-control" placeholder="Password"/>
+                <span asp-validation-for="Password" class="text-danger" />
+
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 pb-2" style="display:grid;grid-template-columns: 0.7fr 1.3fr;">
+                <label class="control-label pt-2" style="font-size:20px;">Role</label>
+                <select asp-for="Role" class="form-select" asp-items="@ViewBag.RoleList" >
+                    <option disabled selected>--Select Role--</option>
+                </select>
+                <span asp-validation-for="Role" class="text-danger" />
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 mt-2 pb-2" style="display:grid;grid-template-columns: 1fr 1fr;grid-column-gap: 10px;">
+                <a type="submit" class="form-control btn btn-secondary" asp-action="Login" value="Submit">Login</a>
+                <button type="submit" class="form-control btn btn-success" asp-action="Register" value="Submit">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

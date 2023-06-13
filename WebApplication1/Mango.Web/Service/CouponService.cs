@@ -18,7 +18,7 @@ namespace Mango.Web.Service
             {
                 ApiType = ApiType.POST,
                 Data= couponDTO,
-                Url = CouponAPIBase + "/api/CouponAPI/"
+                Url = CouponAPIBase + "/api/CouponAPI"
             });
         }
 
@@ -63,7 +63,7 @@ namespace Mango.Web.Service
             {
                 ApiType = ApiType.PUT,
                 Data = couponDTO,
-                Url = CouponAPIBase + "/api/CouponAPI/"
+                Url = CouponAPIBase + "/api/CouponAPI"
             });
         }
     }
