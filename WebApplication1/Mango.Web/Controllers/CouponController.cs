@@ -17,7 +17,6 @@ namespace Mango.Web.Controllers
         {
             _couponService = couponService;
         }
-  /*      [Authorize(Roles = "ADMIN")]*/
         public async Task<IActionResult> CouponIndex()
         {
             List<CouponDTO>? list = new();
@@ -33,13 +32,11 @@ namespace Mango.Web.Controllers
             }
             return View(list);
         }
-/*        [Authorize(Roles = StaticDetails.RoleAdmin)]*/
         public async Task<IActionResult> CouponCreate()
         {
 
             return View();
         }
-/*        [Authorize(Roles = StaticDetails.RoleAdmin)]*/
         [HttpPost]
         public async Task<IActionResult> CouponCreate(CouponDTO model)
         {
@@ -58,7 +55,6 @@ namespace Mango.Web.Controllers
             }
             return View(model);
         }
-/*        [Authorize(Roles = StaticDetails.RoleAdmin)]*/
         public async Task<IActionResult> CouponDelete(int couponId)
         {
             ResponseDTO? response = await _couponService.GetCouponByIdAsync(couponId);
@@ -74,7 +70,6 @@ namespace Mango.Web.Controllers
             }
             return NotFound();
         }
-/*        [Authorize(Roles = StaticDetails.RoleAdmin)]*/
         [HttpPost]
         public async Task<IActionResult> CouponDelete(CouponDTO model)
         {
@@ -88,6 +83,29 @@ namespace Mango.Web.Controllers
             else
             {
                 TempData["error"] = response?.Message;
+            }
+            return View(model);
+        }
+        public async Task<IActionResult> CouponUpdate(int couponId)
+        {
+            ResponseDTO? response = await _couponService.GetCouponByIdAsync(couponId);
+
+            if (response != null && response.IsSuccess)
+            {
+                CouponDTO? model = JsonConvert.DeserializeObject<CouponDTO>(Convert.ToString(response.Result));
+                return View(model);
+            }
+            return NotFound();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CouponUpdate(CouponDTO model)
+        {
+            ResponseDTO? response = await _couponService.UpdateCouponsAsync(model);
+
+            if (response != null && response.IsSuccess)
+            {
+                return RedirectToAction(nameof(CouponIndex));
             }
             return View(model);
         }
