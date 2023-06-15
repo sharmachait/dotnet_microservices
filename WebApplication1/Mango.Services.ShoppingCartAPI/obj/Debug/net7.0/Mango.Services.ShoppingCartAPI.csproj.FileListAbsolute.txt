@@ -80,3 +80,4 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.S
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.ShoppingCartAPI\obj\Debug\net7.0\Mango.Services.ShoppingCartAPI.pdb
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.ShoppingCartAPI\obj\Debug\net7.0\Mango.Services.ShoppingCartAPI.genruntimeconfig.cache
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.ShoppingCartAPI\obj\Debug\net7.0\ref\Mango.Services.ShoppingCartAPI.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.ShoppingCartAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
