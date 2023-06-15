@@ -31,7 +31,8 @@
                                 </div>
                             </div>
                             <div class="row mx-0">
-                                <input class="form-control" type="number" placeholder="Quantity"/>
+                                <input asp-for="Count" class="form-control" />
+                                <span asp-validation-for="Count" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -39,7 +40,7 @@
             </div>
             <div class="card-footer row ">
                 <div class="col-12 col-md-6 pb-1 ">
-                    <a class="btn btn-success btn-square form-control btn-lg" style="height:50px;">Back to List</a>
+                    <a asp-action="Index" class="btn btn-success btn-square form-control btn-lg" style="height:50px;">Back to List</a>
                 </div>
                 <div class="col-12 col-md-6 ">
                     <button type="submit" class="btn btn-primary form-control btn-lg" style="height:50px;">Add to Cart</button>
@@ -49,3 +50,6 @@
     </div>
 </form>
 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
