@@ -1,6 +1,7 @@
 ﻿using Mango.Web.Models;
 using Mango.Web.Service.IService;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
@@ -9,12 +10,13 @@ namespace Mango.Web.Controllers
 {
     public class HomeController : Controller
     {
-
+        private readonly ICartService _cartService;
         private readonly IProductService _productService;
 
-        public HomeController( IProductService productService)
+        public HomeController( IProductService productService, ICartService cartService)
         {
             _productService = productService;
+            _cartService = cartService;
         }
 
         public async Task<IActionResult> Index()
@@ -48,16 +50,52 @@ namespace Mango.Web.Controllers
             return NotFound();
         }
 
-/*        public async Task<IActionResult> Details(ProductDTO model)
+        [Authorize]
+        [HttpPost]
+        [ActionName("ProductDetails")]
+        public async Task<IActionResult> ProductDetails(ProductDTO productDTO)
         {
-            ResponseDTO? response = await _productService.UpdateProductAsync(model);
+
+            CartDTO cartDTO = new CartDTO()
+            {
+                CartHeader = new CartHeaderDTO
+                {
+                    UserId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value
+                }
+            };
+
+            CartDetailsDTO cartDetails = new CartDetailsDTO()
+            {
+                Count = productDTO.Count,
+                ProductId = productDTO.ProductId,
+            };
+
+            List<CartDetailsDTO> cartDetailsDTOs = new() { cartDetails };
+            cartDTO.CartDetails = cartDetailsDTOs;
+
+            ResponseDTO? response = await _cartService.UpsertCartAsync(cartDTO);
 
             if (response != null && response.IsSuccess)
             {
+                TempData["success"] = "Item has been added.";
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(model);
-        }*/
+            TempData["error"] = response?.Message;
+
+            return View(productDTO);
+        }
+
+        /*        public async Task<IActionResult> Details(ProductDTO model)
+                {
+                    ResponseDTO? response = await _productService.UpdateProductAsync(model);
+
+                    if (response != null && response.IsSuccess)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+                    return View(model);
+                }*/
 
         public IActionResult Privacy()
         {
