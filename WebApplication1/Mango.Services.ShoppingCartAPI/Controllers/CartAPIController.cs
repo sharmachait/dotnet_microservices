@@ -118,9 +118,9 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         {
             try
             {
-                var cartDetails = _db.CartDetails.First(u => u.CartDetailsId == cartDetailsId);
+                var cartDetails = await _db.CartDetails.FirstOrDefaultAsync(u => u.CartDetailsId == cartDetailsId);
 
-                int totalCountOfCartItem=_db.CartDetails.Where(u=>u.CartHeaderId==cartDetails.CartHeaderId).Count();
+                int totalCountOfCartItem = _db.CartDetails.Where(u => u.CartHeaderId == cartDetails.CartHeaderId).Count();
                 _db.CartDetails.Remove(cartDetails);
                 if (totalCountOfCartItem == 1)
                 {

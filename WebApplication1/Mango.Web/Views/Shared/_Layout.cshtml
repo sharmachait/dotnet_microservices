@@ -57,14 +57,14 @@
                         }
                         else
                         {
-                            @if (User.Identity.IsAuthenticated && User.Claims.Any(claim => claim.Value.Equals("ADMIN")))
-                            {
+
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="CartIndex">
                                         &nbsp;<i class="bi bi-cart"></i>&nbsp;
                                     </a>
                                 </li>
-                            }
+
+
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="#">Hello, @User.Identity.Name</a>
                             </li>

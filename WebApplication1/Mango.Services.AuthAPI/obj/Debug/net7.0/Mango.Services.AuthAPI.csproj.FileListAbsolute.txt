@@ -11,6 +11,9 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.S
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Humanizer.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -20,6 +23,9 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.S
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
@@ -77,9 +83,3 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.S
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\obj\Debug\net7.0\Mango.Services.AuthAPI.pdb
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\obj\Debug\net7.0\Mango.Services.AuthAPI.genruntimeconfig.cache
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\obj\Debug\net7.0\ref\Mango.Services.AuthAPI.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

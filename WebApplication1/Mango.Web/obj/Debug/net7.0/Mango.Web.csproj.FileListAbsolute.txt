@@ -6,7 +6,12 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.W
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Mango.Web.runtimeconfig.json
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Mango.Web.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Mango.Web.pdb
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\obj\Debug\net7.0\Mango.Web.csproj.AssemblyReference.cache
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\obj\Debug\net7.0\Mango.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\obj\Debug\net7.0\Mango.Web.AssemblyInfoInputs.cache
@@ -31,8 +36,3 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.W
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\obj\Debug\net7.0\Mango.Web.pdb
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\obj\Debug\net7.0\Mango.Web.genruntimeconfig.cache
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\obj\Debug\net7.0\ref\Mango.Web.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
