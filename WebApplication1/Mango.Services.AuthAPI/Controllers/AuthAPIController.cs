@@ -1,8 +1,10 @@
-﻿using Mango.Services.AuthAPI.Models.DTO;
+﻿using Mango.MessageBus;
+using Mango.Services.AuthAPI.Models.DTO;
 using Mango.Services.AuthAPI.Service;
 using Mango.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace Mango.Services.AuthAPI.Controllers
 {
@@ -12,13 +14,16 @@ namespace Mango.Services.AuthAPI.Controllers
 	[ApiController]
 	public class AuthAPIController : ControllerBase
 	{
-
-		private readonly IAuthService _authService;
+        private readonly IMessageBus _messageBus;
+        private readonly IConfiguration _configuration;
+        private readonly IAuthService _authService;
 		protected ResponseDTO _response;
 
-        public AuthAPIController(IAuthService authService)
+        public AuthAPIController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration)
         {
-			_authService = authService;
+            _configuration = configuration;
+            _messageBus = messageBus;
+            _authService = authService;
 			_response = new();
         }
 
@@ -30,7 +35,8 @@ namespace Mango.Services.AuthAPI.Controllers
 				_response.Message=errorMessage;
 				return BadRequest(_response);
 
-			}	
+			}
+			await EmailUserRequest(model.Email);
 			return Ok(_response);
 		}
 
@@ -59,5 +65,24 @@ namespace Mango.Services.AuthAPI.Controllers
 			}
 			return Ok(_response);
 		}
-	}
+
+        [HttpPost("EmailUserRequest")]
+        public async Task<object> EmailUserRequest(string email)
+        {
+            try
+            {
+                await _messageBus.PublishMessage(email, _configuration.GetValue<string>("TopicAndQueueName:EmailUserQueue"));
+                _response.Result = true;
+
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message.ToString();
+            }
+
+            return _response;
+        }
+
+    }
 }

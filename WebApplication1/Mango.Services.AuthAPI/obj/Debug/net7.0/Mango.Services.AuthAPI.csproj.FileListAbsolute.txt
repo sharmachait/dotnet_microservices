@@ -83,3 +83,9 @@ C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.S
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\obj\Debug\net7.0\Mango.Services.AuthAPI.pdb
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\obj\Debug\net7.0\Mango.Services.AuthAPI.genruntimeconfig.cache
 C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\obj\Debug\net7.0\ref\Mango.Services.AuthAPI.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Azure.Core.Amqp.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Azure.Messaging.ServiceBus.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Azure.Amqp.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Mango.MessageBus.dll
+C:\Users\chaitanya sharma\OneDrive\Desktop\microservices\WebApplication1\Mango.Services.AuthAPI\bin\Debug\net7.0\Mango.MessageBus.pdb
