@@ -27,6 +27,20 @@ namespace Mango.Web.Controllers
             return View(data);
         }
 
+        [Authorize]
+        public async Task<IActionResult> Checkout()
+        {
+            var data = await LoadCartDTOBasedOnLoggedInUser();
+            if (data.CartDetails == null || data.CartHeader == null)
+            {
+                TempData["error"] = "Cart is empty.";
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(data);
+        }
+
+
         public async Task<IActionResult> Remove(int cartDetailsId) 
         {
             var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
