@@ -4148,9 +4148,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\MangoServices.OrderAPI.csproj",
-      "projectName": "MangoServices.OrderAPI",
-      "projectPath": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\MangoServices.OrderAPI.csproj",
+      "projectUniqueName": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\Mango.Services.OrderAPI.csproj",
+      "projectName": "Mango.Services.OrderAPI",
+      "projectPath": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\Mango.Services.OrderAPI.csproj",
       "packagesPath": "C:\\Users\\chaitanya sharma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vCXWIRgdR6HkVnK+oYeUl0liCdKopx3LrNJg57+xu6P+J7B8C94WKXFne/oNVOsYh+fn+PIO+TM8UXsKx8aO2Q==",
+  "dgSpecHash": "ZT6hORn8fytLRzn105h+OdNhLYskAIjWHBmvttvijGw4/a7rJj7P1+L8HHt5SvtEZSQpAG3hs2O492ac121ivA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\MangoServices.OrderAPI.csproj",
+  "projectFilePath": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\MangoServices.OrderAPI\\Mango.Services.OrderAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chaitanya sharma\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\chaitanya sharma\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
