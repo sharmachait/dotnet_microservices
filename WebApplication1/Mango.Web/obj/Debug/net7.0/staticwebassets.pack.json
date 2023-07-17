@@ -17,6 +17,58 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Bhel.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Bhel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Buttermilk.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Buttermilk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Carrot Love.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Carrot Love.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Jalebi.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Jalebi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Malai Kofta.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Malai Kofta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Mango Prardise.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Mango Prardise.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Paneer Tikka.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Paneer Tikka.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Pani Puri.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Pani Puri.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Rasmalai.jpeg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Rasmalai.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Samosa.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Samosa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Spring Roll.jpg",
+      "PackagePath": "staticwebassets\\images\\Product Images\\Spring Roll.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\mango.png",
+      "PackagePath": "staticwebassets\\images\\mango.png"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\order.png",
+      "PackagePath": "staticwebassets\\images\\order.png"
+    },
+    {
       "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

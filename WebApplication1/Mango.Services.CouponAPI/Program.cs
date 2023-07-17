@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Stripe;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 
@@ -52,6 +53,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+StripeConfiguration.ApiKey = builder.Configuration.GetValue<string>("Stripe:Coupon");
+
 
 app.UseHttpsRedirection();
 

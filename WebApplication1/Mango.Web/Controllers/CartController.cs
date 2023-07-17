@@ -1,5 +1,6 @@
 ﻿using Mango.Web.Models;
 using Mango.Web.Service.IService;
+using Mango.Web.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.JsonWebTokens;
@@ -55,9 +56,35 @@ namespace Mango.Web.Controllers
             OrderHeaderDTO orderHeaderDTO = JsonConvert.DeserializeObject<OrderHeaderDTO>(Convert.ToString(response.Result));
             if (response != null && response.IsSuccess) 
             {
-                //do the stripe transaction
+                var domain = Request.Scheme + "://" + Request.Host.Value + "/";
+
+                StripeRequestDTO stripeRequestDTO = new()
+                {
+                    ApprovedUrl = domain+ "Cart/Confirmation?orderid="+orderHeaderDTO.OrderHeaderId,
+                    CancelUrl = domain+"Cart/Checkout",
+                    OrderHeader=orderHeaderDTO
+                };
+                var responseStripe = await _orderService.CreateStripeSession(stripeRequestDTO);
+                StripeRequestDTO stripeResponse = JsonConvert.DeserializeObject<StripeRequestDTO>(Convert.ToString(responseStripe.Result));
+                Response.Headers.Add("Location", stripeResponse.StripeSessionUrl);
+                return new StatusCodeResult(303);//means redirection to another page
             }
             return View();
+        }
+        [Authorize]
+        public async Task<IActionResult> Confirmation(int orderId)
+        {
+            
+            ResponseDTO? response = await _orderService.ValidateStripeSession(orderId);
+            if (response != null && response.IsSuccess)
+            {
+                OrderHeaderDTO orderHeader = JsonConvert.DeserializeObject<OrderHeaderDTO>(Convert.ToString(response.Result));
+                if (orderHeader.Status.Equals(StaticDetails.Status_Approved)) {
+                    return View(orderId);
+                }
+            }
+            //redirect to some error page
+            return View(orderId);
         }
 
 
