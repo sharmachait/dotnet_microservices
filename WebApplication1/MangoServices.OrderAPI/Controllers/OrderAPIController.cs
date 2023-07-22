@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Stripe.Checkout;
 using Stripe;
+using Mango.MessageBus;
 
 namespace Mango.Services.OrderAPI.Controllers
 {
@@ -20,12 +21,20 @@ namespace Mango.Services.OrderAPI.Controllers
         private IMapper _mapper;
         private readonly AppDbContext _db;
         private IProductService _productService;
-        public OrderAPIController(IMapper mapper, AppDbContext db, IProductService productService)
+
+        private readonly IMessageBus _messageBus;
+        private readonly IConfiguration _configuration;
+        public OrderAPIController(IMapper mapper, AppDbContext db,
+            IProductService productService, IConfiguration configuration,
+            IMessageBus messageBus)
         {
+            _messageBus = messageBus;
             _response = new ResponseDTO();
             _mapper = mapper;
             _db = db;
             _productService = productService;
+            _configuration = configuration;
+
         }
         [Authorize]
         [HttpPost("CreateOrder")]
@@ -131,9 +140,19 @@ namespace Mango.Services.OrderAPI.Controllers
                     orderHeader.PaymentIntentId = paymentIntent.Id;
                     orderHeader.Status = StaticDetails.Status_Approved;
                     await _db.SaveChangesAsync();
+
+                    RewardsDTO rewardsDTO = new RewardsDTO() {
+                        OrderId=orderHeader.OrderHeaderId,
+                        RewardsActivity=Convert.ToInt32(orderHeader.OrderTotal),
+                        UserId=orderHeader.UserId
+                    };
+
+                    string topicName = _configuration.GetValue<string>("TopicAndQueueName:OrderCreatedTopic");
+                    await _messageBus.PublishMessage(rewardsDTO,topicName);
+
                     _response.Result = _mapper.Map<OrderHeaderDTO>(orderHeader);
                 }
-                else if (paymentIntent.Status.Equals("requires_action")) 
+/*                else if (paymentIntent.Status.Equals("requires_action")) 
                 {
                     orderHeader.PaymentIntentId = paymentIntent.Id;
                     orderHeader.Status = StaticDetails.Status_Pending;
@@ -146,7 +165,7 @@ namespace Mango.Services.OrderAPI.Controllers
                     orderHeader.Status = StaticDetails.Status_Cancelled;
                     await _db.SaveChangesAsync();
                     _response.Result = _mapper.Map<OrderHeaderDTO>(orderHeader);
-                }
+                }*/
 
             }
             catch (Exception ex)
