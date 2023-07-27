@@ -54,17 +54,38 @@ namespace Mango.Services.ProductAPI.Controllers
             }
             return _response;
         }
+
         [Authorize(Roles = "ADMIN")]
         [HttpPost]
-        public ResponseDTO Post([FromBody] ProductDTO productDTO)
+        public ResponseDTO Post([FromForm] ProductDTO productDTO)
         {
             try
             {
-                Product obj = _mapper.Map<Product>(productDTO);
-                _db.Products.Add(obj);
+                Product product = _mapper.Map<Product>(productDTO);
+                _db.Products.Add(product);
                 _db.SaveChanges();
 
-                _response.Result = _mapper.Map<ProductDTO>(obj);
+                if (productDTO.Image != null)
+                {
+                    string fileName=product.ProductId+Path.GetExtension(productDTO.Image.FileName);
+                    string filePath = @"wwwroot\ProductImages\" + fileName;
+                    var filePathDir = Path.Combine(Directory.GetCurrentDirectory(), filePath);
+                    using(var fileStream=new FileStream(filePathDir,FileMode.Create))
+                    {
+                        productDTO.Image.CopyTo(fileStream);
+                    }
+                    
+                    var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}{HttpContext.Request.PathBase.Value}";
+                    product.ImageLocalPath = filePath;
+                    product.ImageUrl = baseUrl + "/ProductImages/" + fileName;
+                }
+                else
+                {
+                    productDTO.ImageUrl = "https://placehold.co/600x400";
+                }
+                _db.Products.Update(product);
+                _db.SaveChanges();
+                _response.Result = _mapper.Map<ProductDTO>(product);
             }
             catch (Exception ex)
             {
@@ -76,7 +97,7 @@ namespace Mango.Services.ProductAPI.Controllers
 
         [Authorize(Roles = "ADMIN")]
         [HttpPut]
-        public ResponseDTO Put([FromBody] ProductDTO productDTO)
+        public ResponseDTO Put([FromForm] ProductDTO productDTO)
         {
             try
             {

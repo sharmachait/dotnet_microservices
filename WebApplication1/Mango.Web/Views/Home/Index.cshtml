@@ -13,13 +13,13 @@
                     <div class="p-0 my-3 border rounded">
                         <div class="card">
                             <h3 class="card-title text-dark-50 text-center py-2">@product.Name</h3>
-                            <img src="@product.ImageUrl" class="card-img-top">
+                        <img src="@product.ImageUrl" class="card-img-top" height="302" width="602">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between py-2">
                                     <span class="text-danger" style="font-size:20px;">@product.Price.ToString("c")</span>
                                     <span class="badge bg-warning text-white p-2">@product.CategoryName</span>
                                 </div>
-                                <p class="card-text">@Html.Raw(product.Description)</p>
+                                <p class="card-text text-truncate" style="height:50px">@Html.Raw(product.Description)</p>
                                 <div class="row">
                                     <div class="col">
                                     <a asp-action="ProductDetails" asp-route-productId="@product.ProductId" class="btn btn-success form-control">Details</a>
