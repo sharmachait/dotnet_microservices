@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QUCNvEMJnXLB0TPWVL2UHaXwrF2yswF8gzetCi1LBME=",
+  "Hash": "Y0se7SvZmfUFnB82SYiI5I911oh9lBBnIsTr3seG3vU=",
   "Source": "Mango.Web",
   "BasePath": "_content/Mango.Web",
   "Mode": "Default",
@@ -119,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\images\\mango.png"
     },
     {
-      "Identity": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\order.png",
+      "Identity": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\order.jpg",
       "SourceId": "Mango.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\",
       "BasePath": "_content/Mango.Web",
-      "RelativePath": "images/order.png",
+      "RelativePath": "images/order.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\order.png"
+      "OriginalItemSpec": "wwwroot\\images\\order.jpg"
     },
     {
       "Identity": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Web\\wwwroot\\images\\Product Images\\Bhel.jpg",

@@ -97,19 +97,31 @@ namespace Mango.Web.Controllers
                 ProductDTO? model = JsonConvert.DeserializeObject<ProductDTO>(Convert.ToString(response.Result));
                 return View(model);
             }
-            return NotFound();
+			else
+			{
+				TempData["error"] = response?.Message;
+			}
+			return NotFound();
         }
 
         [HttpPost]
         public async Task<IActionResult> ProductUpdate(ProductDTO model)
         {
-            ResponseDTO? response = await _productService.UpdateProductAsync(model);
-
-            if (response != null && response.IsSuccess)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(ProductIndex));
-            }
-            return View(model);
+				ResponseDTO? response = await _productService.UpdateProductAsync(model);
+
+				if (response != null && response.IsSuccess)
+				{
+					TempData["success"] = "Product Deleted";
+					return RedirectToAction(nameof(ProductIndex));
+				}
+				else
+				{
+					TempData["error"] = response?.Message;
+				}
+			}
+			return View(model);
         }
     }
 }

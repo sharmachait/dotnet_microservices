@@ -1,8 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\12.jpeg",
-      "PackagePath": "staticwebassets\\ProductImages\\12.jpeg"
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\14.webp",
+      "PackagePath": "staticwebassets\\ProductImages\\14.webp"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\15.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\16.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\17.jpeg",
+      "PackagePath": "staticwebassets\\ProductImages\\17.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\18.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\chaitanya sharma\\OneDrive\\Desktop\\microservices\\WebApplication1\\Mango.Services.ProductAPI\\wwwroot\\ProductImages\\19.webp",
+      "PackagePath": "staticwebassets\\ProductImages\\19.webp"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Mango.Services.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props",

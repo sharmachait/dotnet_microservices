@@ -39,8 +39,9 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         public async Task<ResponseDTO> GetCart(string userId) {
             try 
             {
-                CartDTO cart = new() {
-                CartHeader=_mapper.Map<CartHeaderDTO>(_db.CartHeaders.First(u=>u.UserId==userId))
+                CartDTO cart = new() 
+                {
+                    CartHeader=_mapper.Map<CartHeaderDTO>(_db.CartHeaders.First(u=>u.UserId==userId))
                 };
                 cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTO>>(_db.CartDetails
                     .Where(u => u.CartHeaderId == cart.CartHeader.CartHeaderId));
