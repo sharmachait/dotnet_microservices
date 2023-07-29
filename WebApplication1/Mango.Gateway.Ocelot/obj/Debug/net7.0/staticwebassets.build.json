@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "66xjGnBUAVhtCTEU0OV3Z30gwsR2VhLr29G3J+QsTOc=",
+  "Source": "Mango.Gateway.Ocelot",
+  "BasePath": "_content/Mango.Gateway.Ocelot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
